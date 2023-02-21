@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Prueba jQUERY</title>
+</head>
+
+<button href="index.html">Inicio</button><br>
+
+<script>
+
+    //el uso del *
+    document.write("Uso del asterisco. Hice que el fondo fuera de un color");
+    $(document).ready(function () {
+        $("*").css("background-color", "silver"); //si escribo red el fondo se pone rojo
+    });
+
+    //uso del #id
+    $(document).ready(function () {
+        $("#boton1").click(function () {
+            $("#prueba").hide();
+        });
+    });
+
+    //uso del .class
+    $(document).ready(function () {
+        $("#boton2").click(function () {
+            $(".prueba2").hide();
+        });
+    });
+
+    //uso del .intro, .demo
+    $(document).ready(function () {
+        $(".N1, .N2").dblclick(function () {
+            $(this).hide();
+        });
+    });
+
+    //uso del element
+    $(document).ready(function () {
+        $("a").css("background-color", "red");
+    });
+</script>
+
+<body>
+
+    <h1>Prueba jQuery. de BHL</h1>
+
+    <p id="prueba">Hola, prueba del #id</p>
+    <button id="boton1">¡Touch me!</button>
+
+    <br>
+
+    <p class="prueba2">Esta es la prueba de .class</p>
+    <button id="boton2" type="button" class="btn btn-primary">Presiona</button>
+
+    <p class="N1">Esta es la prueba del .intro, .demo</p>
+    <p class="N2">Da doble clik sobre nosotros, y nosotros nos ocultamos.</p>
+
+    <p>Esta es la prueba de element</p>
+    <a>Hola, esta es una etiqueta "a"</a><br>
+    <a>Todas las etiquetas "a", tendran un fondo de color</a>
+    <p>Esta no es una etiqueta "a"</p>
+    <a>esta ultima sí</a>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
